@@ -1,0 +1,8 @@
+// test
+
+void initGame(void)
+{
+
+
+
+}
