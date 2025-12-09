@@ -28,4 +28,6 @@ include "keyboard_state.h"
 #include <stdlib.h>
 
 
+void initmorse(void);
+
 
