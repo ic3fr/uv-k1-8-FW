@@ -1,8 +1,21 @@
-/*  test
- *   game to learn morse on uvK1
+/************************************************************
+ * Morse Training Game - Freeware
+ * Created with the assistance of ChatGPT (OpenAI)
  *
-*/
-include "keyboard_state.h"
+ * Compatible with the same environment as Breakout:
+ * - BK4819 audio
+ * - ST7565 LCD
+ * - Keyboard driver
+ * - Framebuffer-based UI
+ *
+ * Provides:
+ *  - Manual Morse input mode
+ *  - Automatic training mode (radio sends Morse, user guesses)
+ ************************************************************/
+
+#pragma once
+
+#include "keyboard_state.h"
 
 #include "../bitmaps.h"
 #include "../board.h"
@@ -22,12 +35,14 @@ include "keyboard_state.h"
 #include "../settings.h"
 #include "../ui/helper.h"
 #include "../audio.h"
+
 #include <stdbool.h>
 #include <stdint.h>
 #include <string.h>
 #include <stdlib.h>
 
+// Lance le jeu
+void APP_RunMorseGame(void);
 
-void initmorse(void);
 
 
